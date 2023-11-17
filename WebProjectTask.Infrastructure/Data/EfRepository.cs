@@ -6,7 +6,7 @@ namespace WebProjectTask.Infrastructure.Data
 {
     public class EfRepository<T> : RepositoryBase<T>, IEfRepository<T> where T : class
     {
-        public EfRepository(DbContext dbContext) : base(dbContext)
+        public EfRepository(DatabaseContext dbContext) : base(dbContext)
         {
         }
 
